@@ -3,10 +3,10 @@
   "scripts": {
     "start": "browser-sync start --server src --no-notify --no-ui --cwd src --files index.html,styles/**/*",
     "test": "editorconfig-checker",
-    "validate": "html-eslint http://localhost:3000",
+    "validate": "node-w3c-validator -i ./dist/index.html -f html -s",
     "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
     "styles": "postcss src/styles/index.css --use postcss-import --use postcss-csso --no-map --output dist/styles/index.css",
-    "build": "npm run validate && npm run html && npm run styles",
+    "build": "npm run html && npm run styles && npm run validate",
     "serve": "serve"
   },
   "devDependencies": {
@@ -14,6 +14,7 @@
     "browser-sync": "^2.26.7",
     "editorconfig-checker": "^3.1.0",
     "html-minifier": "^4.0.0",
+    "node-w3c-validator": "^2.0.1",
     "postcss-cli": "^7.1.1",
     "postcss-csso": "^4.0.0",
     "postcss-import": "^12.0.1"
