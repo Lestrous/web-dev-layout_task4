@@ -3,7 +3,8 @@
   "scripts": {
     "start": "browser-sync start --server src --no-notify --no-ui --cwd src --files **/*.*",
     "test": "editorconfig-checker",
-    "validate": "html-eslint http://localhost:3000",
+    "validate_flexbox": "html-eslint http://localhost:3000/flexbox",
+    "validate_grid": "html-eslint http://localhost:3000/grid",
     "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
     "styles_flexbox": "postcss src/styles/flexbox.css --use postcss-import --use postcss-csso --no-map --output dist/styles/flexbox.css",
     "styles_grid": "postcss src/styles/grid.css --use postcss-import --use postcss-csso --no-map --output dist/styles/grid.css",
