@@ -85,32 +85,12 @@
     font-size: 18px;
 }
 
-@media (max-width: 850px) {
-    .header__button {
-        display: none;
-    }
-}
-
 .burger {
-    /*display: none;*/
-}
-
-.header__burger {
-    /*display: none;*/
-}
-
-@media (max-width: 850px) {
-    .burger {
-        display: block;
-        height: 24px;
-        background: url("../../img/burger.png") center no-repeat;
-        border: none;
-        cursor: pointer;
-    }
-
-    .header__burger {
-        flex: 0 0 24px;
-    }
+    display: block;
+    height: 24px !important;
+    background: url("../../img/burger.png") center no-repeat;
+    border: none;
+    cursor: pointer;
 }
 
 .header__icon {
