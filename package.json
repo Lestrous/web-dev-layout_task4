@@ -8,28 +8,38 @@
     "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
     "styles_flexbox": "postcss src/styles/flexbox.css --use postcss-import --use postcss-csso --no-map --output dist/styles/flexbox.css",
     "styles_grid": "postcss src/styles/grid.css --use postcss-import --use postcss-csso --no-map --output dist/styles/grid.css",
-    "styles": "npm run styles_flexbox",
+    "styles_bootstrap": "postcss src/styles/bootstrap.css --use postcss-import --use postcss-csso --no-map --output dist/styles/bootstrap.css",
+    "styles": "npm run styles_flexbox && npm run styles_bootstrap",
     "copy_fonts_roboto": "copyfiles -f ./src/fonts/Roboto/*.* ./dist/fonts/Roboto/",
     "copy_fonts_roboto_slab": "copyfiles -f ./src/fonts/Roboto-Slab/*.* ./dist/fonts/Roboto-Slab/",
     "copy_fonts_source_sans_pro": "copyfiles -f ./src/fonts/Source-Sans-Pr0/*.* ./dist/fonts/Source-Sans-Pr0/",
     "copy_img": "copyfiles -f ./src/img/*.* ./dist/img/",
     "copy_js": "copyfiles -f ./src/js/*.* ./dist/js/",
     "copy_js_libs": "copyfiles -f ./src/js/libs/*.* ./dist/js/libs/",
-    "copy_all": "npm run copy_fonts_roboto && npm run copy_fonts_roboto_slab && npm run copy_fonts_source_sans_pro && npm run copy_img && npm run copy_js && npm run copy_js_libs",
+    "webpack": "webpack",
+    "copy_all": "npm run copy_fonts_roboto && npm run copy_fonts_roboto_slab && npm run copy_fonts_source_sans_pro && npm run copy_img && npm run copy_js_libs && npm run webpack",
     "build": "npm run html && npm run styles && npm run copy_all",
     "serve": "serve"
   },
   "devDependencies": {
     "@html-eslint/cli": "^0.12.0",
+    "autoprefixer": "^10.4.0",
     "browser-sync": "^2.26.7",
     "copyfiles": "^2.4.1",
+    "css-loader": "^6.5.1",
     "editorconfig-checker": "^3.1.0",
     "html-minifier": "^4.0.0",
     "postcss-cli": "^7.1.1",
     "postcss-csso": "^4.0.0",
-    "postcss-import": "^12.0.1"
+    "postcss-import": "^12.0.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1"
   },
   "dependencies": {
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
     "serve": "^13.0.2"
   },
   "engines": {

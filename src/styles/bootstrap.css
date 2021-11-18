@@ -1,0 +1,10 @@
+@import 'variables.css';
+@import 'fonts.css';
+@import 'reset.css';
+
+/* Blocks */
+
+@import 'blocks/header_bootstrap.css';
+@import 'blocks/main_bootstrap.css';
+@import 'blocks/card.css';
+@import 'blocks/footer_bootstrap.css';
