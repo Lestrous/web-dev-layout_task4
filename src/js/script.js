@@ -1,3 +1,6 @@
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
+
 $(function() {
     let viewportWidth = innerWidth;	// ширина страницы
 
