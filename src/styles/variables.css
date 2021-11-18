@@ -1,5 +1,6 @@
-
-
 :root {
-    --beige: #eeeceb;
+    --dark-color: #1A1B22;
+    --grey-color: #1A1B2280;
+    --light-grey-color: #F5F6F7;
+    --text-grey-color: #B6BCBF;
 }
