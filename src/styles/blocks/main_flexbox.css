@@ -6,7 +6,7 @@
     padding: 40px 0 56px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 848px) {
     .page__first-page {
         padding: 8px 0 32px;
     }
@@ -24,7 +24,7 @@
     color: var(--grey-color);
 }
 
-@media (max-width: 850px) {
+@media (max-width: 848px) {
     .first-page__page-name {
         margin-bottom: 16px;
         font-size: 12px;
@@ -40,7 +40,7 @@
     line-height: 46px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 848px) {
     .article__heading_level_1 {
         width: 400px;
         max-width: 100%;
@@ -64,7 +64,7 @@
     background-color: var(--light-grey-color);
 }
 
-@media (max-width: 8080px) {
+@media (max-width: 800px) {
     .page__articles {
         padding: 24px 0 18px;
     }

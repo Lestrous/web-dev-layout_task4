@@ -15,7 +15,7 @@
     margin-bottom: 16px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 848px) {
     .articles__card {
         margin-bottom: 10px;
     }
@@ -132,7 +132,7 @@
     color: var(--dark-color);
 }
 
-@media (max-width: 850px) {
+@media (max-width: 848px) {
     .heading_theme-card {
         font-size: 22px;
         line-height: 26px;
