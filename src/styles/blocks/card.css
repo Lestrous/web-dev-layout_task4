@@ -1,6 +1,6 @@
 .card {
     position: relative;
-    width: 400px;
+    width: 400px !important;
     height: 576px;
 }
 
@@ -11,30 +11,13 @@
 }
 
 .articles__card {
-    margin-right: 16px;
+    /*margin-right: 16px;*/
     margin-bottom: 16px;
 }
 
 @media (max-width: 850px) {
     .articles__card {
         margin-bottom: 10px;
-    }
-}
-
-.articles__card:nth-child(3n) {
-    margin-right: 0;
-}
-
-.articles__card:last-child {
-    margin-right: auto;
-}
-
-@media (max-width: 1280px) {
-    .articles__card {
-        margin-right: unset;
-    }
-    .articles__card:last-child {
-        margin-right: unset;
     }
 }
 

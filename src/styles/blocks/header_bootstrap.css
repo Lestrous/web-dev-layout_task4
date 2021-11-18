@@ -69,7 +69,7 @@
 .header__button {
     /*flex: 0 0 112px;*/
     height: 48px;
-    width: 112px;
+    width: 112px !important;
     margin-left: auto;
     align-items: center;
 }
