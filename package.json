@@ -8,7 +8,7 @@
     "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
     "styles_flexbox": "postcss src/styles/flexbox.css --use postcss-import --use postcss-csso --no-map --output dist/styles/flexbox.css",
     "styles_grid": "postcss src/styles/grid.css --use postcss-import --use postcss-csso --no-map --output dist/styles/grid.css",
-    "styles": "npm run styles_flexbox",
+    "styles": "npm run styles_flexbox && npm run styles_grid",
     "copy_fonts_roboto": "copyfiles -f ./src/fonts/Roboto/*.* ./dist/fonts/Roboto/",
     "copy_fonts_roboto_slab": "copyfiles -f ./src/fonts/Roboto-Slab/*.* ./dist/fonts/Roboto-Slab/",
     "copy_fonts_source_sans_pro": "copyfiles -f ./src/fonts/Source-Sans-Pr0/*.* ./dist/fonts/Source-Sans-Pr0/",
